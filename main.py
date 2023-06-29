@@ -56,6 +56,7 @@ def run_camera():
             run_camera_loop = False
         elif index == 3 and confidence_score >= 0.7:
             run_camera_loop = False
+            break
 
         keyboard_input = cv2.waitKey(1)
 
